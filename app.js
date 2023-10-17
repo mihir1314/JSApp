@@ -15,9 +15,11 @@ function trymewhendone(callback){
 }
 
 trymewhendone(function(){
-    console.log("i ma done");
+    console.log("i ma done 2");
 })
 
 trymewhendone(function(){
     alert("try me when done");
 })
+
+
