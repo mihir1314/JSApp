@@ -1,25 +1,20 @@
-function sayhilater(){
-    var greeting ='hi';
-    setTimeout(function(){
-        console.log(greeting)
-    },3000);
+function proposeToKhushi() {
+    var girlName = "Khushi";
+    var proposalMessage = "Hey " + girlName + ", I have a question for you. Will you be my girlfriend?";
+    console.log(proposalMessage);
+
+    // Waiting for a response
+    setTimeout(function() {
+        var response = prompt("What do you think, Khushi? (Yes/No)");
+        if (response && response.toLowerCase() === "yes") {
+            console.log("That's fantastic! I'm really happy!");
+        } else if (response && response.toLowerCase() === "no") {
+            console.log("I understand. Thanks for your honesty.");
+        } else {
+            console.log("I didn't get that. Let's talk in person.");
+        }
+    }, 2000); // Wait for 2 seconds before asking for a response
 }
 
-sayhilater(); 
-
-function trymewhendone(callback){
-    var a = 1000;
-    var b = 2000;
-
-    callback();
-}
-
-trymewhendone(function(){
-    console.log("i ma done 2");
-})
-
-trymewhendone(function(){
-    alert("try me when done");
-})
-
-
+// Call the function to propose to Khushi
+proposeToKhushi();
